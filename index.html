@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' file:; style-src 'self' file: https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' file: data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Ferhat Orman | Yazılım Mühendisi</title>
+  <meta name="description" content="Ferhat Orman, yazılım mühendisi. Deneyim, eğitim, sertifikalar ve iletişim bilgileri.">
+  <meta name="theme-color" content="#0B1420">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Sora:wght@500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="fx.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+
+  <canvas class="sky" id="sky" aria-hidden="true"></canvas>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#giris" aria-label="Başa dön">FO</a>
+    <nav class="nav" aria-label="Bölümler">
+      <ul>
+        <li><a href="#deneyim">Deneyim</a></li>
+        <li><a href="#egitim">Eğitim</a></li>
+        <li><a href="#sertifikalar">Sertifikalar</a></li>
+        <li><a href="#beceriler">Beceriler</a></li>
+        <!-- Projeler eklenince: <li><a href="#projeler">Projeler</a></li> -->
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+    <button class="fx-toggle" id="fx-toggle" type="button" aria-pressed="false">FX<span class="sr-only"> efektleri</span></button>
+  </header>
+
+  <main id="icerik" tabindex="-1">
+    <section class="hero" id="giris" aria-labelledby="isim">
+      <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <h1 class="hero-name" id="isim"><span>Ferhat</span> <span>Orman</span></h1>
+        <p class="hero-role">Yazılım Mühendisi</p>
+        <p class="hero-lead">Web ve mobil uygulama geliştirme üzerine çalışıyorum.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#iletisim">İletişim</a>
+          <a class="btn btn-ghost" href="assets/Ferhat_Orman_CV.pdf" download>CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section" id="deneyim" aria-labelledby="deneyim-baslik">
+        <h2 class="section-title reveal" id="deneyim-baslik">Deneyim</h2>
+        <article class="card reveal">
+          <h3 class="card-title">Yazılım Geliştirici Stajyeri</h3>
+          <p class="card-meta">FEZA Mühendislik · Haziran 2025 - Temmuz 2025</p>
+          <ul class="list">
+            <li>Endüstriyel donanımlar ile yazılım arasındaki veri akışını sağlayan projelerde çalıştım.</li>
+            <li>İş ortaklarından ve saha cihazlarından gelen anlık verileri toplayıp ilişkisel veritabanına kaydeden bir veri kayıt sistemi geliştirdim.</li>
+            <li>SCADA ve PLC (Programlanabilir Mantık Denetleyici) süreçlerinde, donanım katmanındaki verilerin yazılıma aktarılması üzerinde çalıştım.</li>
+            <li>Mevcut veritabanı yapısının düzenlenmesinde ve optimize edilmesinde görev aldım.</li>
+          </ul>
+        </article>
+      </section>
+
+      <div class="grid-2">
+        <section class="section" id="egitim" aria-labelledby="egitim-baslik">
+          <h2 class="section-title reveal" id="egitim-baslik">Eğitim</h2>
+          <article class="card reveal">
+            <h3 class="card-title">Malatya Turgut Özal Üniversitesi</h3>
+            <p>Yazılım Mühendisliği, 4. sınıf</p>
+            <p class="card-meta">2023 - Devam ediyor</p>
+          </article>
+        </section>
+
+        <section class="section" id="sertifikalar" aria-labelledby="sertifikalar-baslik">
+          <h2 class="section-title reveal" id="sertifikalar-baslik">Sertifikalar</h2>
+          <ul class="card cert-list reveal">
+            <li><span class="card-meta">2024-2025</span> Java ile Programlama</li>
+            <li><span class="card-meta">2024-2025</span> Python ile Programlama</li>
+            <li><span class="card-meta">2025-2026</span> Flutter ile Mobil Geliştirme</li>
+            <li><span class="card-meta">2025-2026</span> JavaScript ile Web Geliştirme</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="section" id="beceriler" aria-labelledby="beceriler-baslik">
+        <h2 class="section-title reveal" id="beceriler-baslik">Beceriler</h2>
+        <div class="card reveal">
+          <ul class="tags" aria-label="Teknolojiler">
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Flutter</li>
+            <li>SQL</li>
+          </ul>
+          <h3 class="card-title">Diller</h3>
+          <p>İngilizce (B1)</p>
+        </div>
+      </section>
+
+      <!--
+        Projeler bölümü. Eklemek için bu yorumu kaldırın ve menüdeki Projeler satırını açın.
+        Her proje için bir <article class="card reveal"> bloğu kopyalanabilir.
+
+      <section class="section" id="projeler" aria-labelledby="projeler-baslik">
+        <h2 class="section-title reveal" id="projeler-baslik">Projeler</h2>
+        <div class="grid-2">
+          <article class="card reveal">
+            <h3 class="card-title">Proje adı</h3>
+            <p class="card-meta">Kullanılan teknolojiler</p>
+            <p>Kısa açıklama.</p>
+            <a class="btn btn-ghost" href="https://github.com/Ferhat-ORMAN" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </article>
+        </div>
+      </section>
+      -->
+
+      <section class="section" id="iletisim" aria-labelledby="iletisim-baslik">
+        <h2 class="section-title reveal" id="iletisim-baslik">İletişim</h2>
+        <ul class="contact-list reveal">
+          <li>
+            <a class="card" href="mailto:ormanferhat0@gmail.com">
+              <span class="card-meta">E-posta</span>
+              ormanferhat0@gmail.com
+            </a>
+          </li>
+          <li>
+            <a class="card" href="https://www.linkedin.com/in/ferhat-orman-72890b356" target="_blank" rel="noopener noreferrer">
+              <span class="card-meta">LinkedIn</span>
+              ferhat-orman-72890b356
+            </a>
+          </li>
+          <li>
+            <a class="card" href="https://github.com/Ferhat-ORMAN" target="_blank" rel="noopener noreferrer">
+              <span class="card-meta">GitHub</span>
+              Ferhat-ORMAN
+            </a>
+          </li>
+          <li>
+            <div class="card">
+              <span class="card-meta">Konum</span>
+              Osmaniye, Merkez
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
